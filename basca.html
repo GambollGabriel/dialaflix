@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baskara</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+
+<body>
+    
+    <div id="tudo" >
+        <h1>Resultados</h1>
+        <div id="partedetudo">
+            <script>
+            
+                //primeiro três valores
+                var a1 = Number(prompt('qual é a letra A ?'));
+                var b1 = Number(prompt('qual é a letra B ?'));
+                var c1 = Number(prompt('qual é a letra C ?'));
+            
+                //primeira formula
+                var Bq = b1 ** 2
+                var mul2 = 4 * a1
+                var mul3 = mul2 * c1
+                var delta = Bq - mul3
+            
+                //segunda formula
+                var p2 = -1 * b1
+                var raiz = Math.sqrt(delta)
+                var pdb = 2 * a1
+            
+                //terceira formula +
+                var b2 = p2+raiz
+                var resuposi = b2 / pdb
+            
+                //terceira formula -
+                var b2 = p2-raiz
+                var resunega = b2 / pdb
+            
+                document.write(`Resultado (delta)= ${delta}`);//resultado de delta
+                document.write(`<br>`);
+                document.write(`Resultado (X1)= ${resuposi}`);//resultado +
+                document.write('<br>');
+                document.write(`Resultado (X2)= ${resunega}`);//resultado -
+                document.write('<br>');
+              /*document.write(`Resultado (X2)= ${resunega1}`);
+                document.write('<br>');
+                document.write(`Resultado (X2)= ${pdb}`);
+                document.write('<br>');*/
+            
+            </script>
+        </div>
+    </div>
+    <div id="divdaimagem">
+        <img src="img/Diala1.jpeg" alt="ela ta linda :)">
+    </div>
+</body>
+</html>
