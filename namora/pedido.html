@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>???</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="tudo">
+        <script>
+             var nome = prompt('Qual é o seu nome ?');
+             document.write(` <h1>Quer namorar comigo ${nome} ?</h1> `);
+        </script>
+            <hr>
+            <br>
+        <div class="d-flex justify-content-aroud">
+            <button id="yes" class="btn btn-light"
+            onclick="window.location.href='https://youtu.be/wQgXlam32kw'" style="
+            color: rgb(255, 0, 0);
+            background-color: aliceblue;
+            border: 1px #fff solid;
+            border-radius: 10px;
+            padding: 10px;
+            ">
+              Sim
+            </button>
+
+            <button id="no" type="submit" class="btn btn-danger" style="
+            color: rgb(255, 0, 0);
+            background-color: aliceblue;
+            border: 1px #fff solid;
+            border-radius: 10px;
+            padding: 10px;
+            " >
+                Não
+            </button>
+        </div>
+    </div> 
+    <script>
+        document.querySelector('#no').addEventListener
+        ("mouseover", function(){
+                let h = window.innerHeight - 50;
+                let w = window.innerWidth - 50;
+                this.style.position = "absolute"
+                this.style.top = Math.random() * h + "px"
+                this.style.left = Math.random() * w + "px"
+        })
+    </script>   
+</body>
+</html>
