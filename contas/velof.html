@@ -73,14 +73,17 @@
                 var r1 = v3*v4
                 var r2 = r1 + v2
                 res1.innerHTML += `<P>A velocidade final é ${r2}</P>`
+
             }else if(isNaN(v2)){
                 var q1 = v3*v4
-                var q2 = q1 / v1
+                var q2 = v1-q1
                 res1.innerHTML += `<P>A velocidade inicial é ${q2}</P>`  
+
             }else if(isNaN(v3)){
                 var r1 = v1-v2
                 var r2 = r1 / v4
                 res1.innerHTML += `<P>O Resultado da aceleração é ${r2}</P>`  
+
             }else if (isNaN(v4)){
                 var r1 = v1-v2
                 var r2 = r1 / v3
@@ -106,17 +109,24 @@
 
                 if (isNaN(s)){
 
-                    var v1 = vi*t
-                    var v2 = a*(t**2)/2
-                    var v3 = v1 + v2 + si 
-                    res.innerHTML += `<P>O espaço final é ${v3}</P>`
+                    var v1 = vi*t 
+                    var v2 = t2**2
+                    var v3 = a*v2 
+                    var v4 = v3/2
+                    var v5 = si + v1 + v4
+
+                    res.innerHTML += `<P>O espaço final é ${v5}</P>`
 
                 }else if(isNaN(si)){
 
                     var v1 = vi*t
-                    var v2 = a*(t**2)/2
-                    var v3 = v2/s
-                    res.innerHTML += `<P>O espaço inicial é ${v3}</P>`
+                    var v2 = t2**2
+                    var v3 = a*v2 
+                    var v4 = v3/2
+                    var v5 = v1+v4
+                    var v6 = s-v5
+                    
+                    res.innerHTML += `<P>O espaço inicial é ${v6}</P>`
 
                 }else if (isNaN(vi)){
 
@@ -156,21 +166,23 @@
                 if (isNaN(v22)){
 
                     var v1 = vi2**2
-                    var v2 = v1+2*a*deltas
+                    var v2 = (2*a*deltas)+v1
                     var v3 = Math.sqrt(v2)
+
                     res2.innerHTML += `<p>O valor da velocidade final é de ${v3}</p>`
 
                 }else if (isNaN(vi2)){
 
                     var v1 = v22**2
-                    var v2 = v1+2*a*deltas
-                    var v3 = Math.sqrt(v2)
+                    var v2 = 2*a*deltas
+                    var v3 = v1 - v2
+                    var v4 = Math.sqrt(v3)
 
-                    res2.innerHTML += `<p>O valor da velocidade inicial é de ${v3}</p>`
+                    res2.innerHTML += `<p>O valor da velocidade inicial é de ${v4}</p>`
 
                 }else if (isNaN(a)){
 
-                   res2.innerHTML += `Usse a formula da velocidade final para descobrir a aceleração.`
+                   res2.innerHTML += `<p>Usse a formula da <strong>velocidade final</strong> para descobrir a aceleração.</p>`
 
                 }else if (isNaN(deltas)){
 
@@ -178,7 +190,7 @@
                     var v2 = vi2**2
                     var v3 = v2+2*a
                     var v4 = v1/v3 
-                    res2.innerHTML += `A variação de espaço é ${v4}`
+                    res2.innerHTML += `<p>A variação de espaço é ${v4}</p>`
                 }
             }
 
