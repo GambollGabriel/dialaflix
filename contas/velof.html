@@ -166,16 +166,17 @@
                 if (isNaN(v22)){
 
                     var v1 = vi2**2
-                    var v2 = (2*a*deltas)+v1
-                    var v3 = Math.sqrt(v2)
+                    var v2 = 2*a*deltas
+                    var v3 = v1+v2 
+                    var v4 = Math.sqrt(v2)
 
-                    res2.innerHTML += `<p>O valor da velocidade final é de ${v3}</p>`
+                    res2.innerHTML += `<p>O valor da velocidade final é de ${v4}</p>`
 
                 }else if (isNaN(vi2)){
 
                     var v1 = v22**2
                     var v2 = 2*a*deltas
-                    var v3 = v1 - v2
+                    var v3 = v2 - v1
                     var v4 = Math.sqrt(v3)
 
                     res2.innerHTML += `<p>O valor da velocidade inicial é de ${v4}</p>`
