@@ -168,7 +168,7 @@
                     var v1 = vi2**2
                     var v2 = 2*a*deltas
                     var v3 = v1+v2 
-                    var v4 = Math.sqrt(v2)
+                    var v4 = Math.sqrt(v3)
 
                     res2.innerHTML += `<p>O valor da velocidade final é de ${v4}</p>`
 
@@ -176,7 +176,13 @@
 
                     var v1 = v22**2
                     var v2 = 2*a*deltas
-                    var v3 = v2 - v1
+
+                    if (v2 > v1){
+                        var v3 = v2 - v1
+                    }else {
+                        var v3 = v1 - v2
+                    }
+
                     var v4 = Math.sqrt(v3)
 
                     res2.innerHTML += `<p>O valor da velocidade inicial é de ${v4}</p>`
@@ -189,9 +195,10 @@
 
                     var v1 = v22**2
                     var v2 = vi2**2
-                    var v3 = v2+2*a
-                    var v4 = v1/v3 
-                    res2.innerHTML += `<p>A variação de espaço é ${v4}</p>`
+                    var v3 = 2*a
+                    var v4 = v1-v2
+                    var v5 = v4/v3
+                    res2.innerHTML += `<p>A variação de espaço é ${v5}</p>`
                 }
             }
 
