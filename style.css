@@ -68,6 +68,10 @@ li>a:hover{
     margin-bottom: 20px;
 }
 
+img{
+    width: 100%;
+}
+
 #texto{
     background-color: black;
     color: rgb(255, 255, 255);
