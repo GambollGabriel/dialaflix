@@ -5,6 +5,7 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
 }
 
 h1{
@@ -41,12 +42,7 @@ img{
     border-radius: 5px;
 }
 
-#divdaimagem{
-    margin-top: 10px;
-    text-align: center;
-}
-
-#recado{
+.recado{
     max-width: 400px;
     min-width: 320px;
     margin: auto;

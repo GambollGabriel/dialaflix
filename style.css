@@ -18,6 +18,12 @@ header{
     line-height: 80px;
 }
 
+h1>a{
+    background-color: #14083300;
+    text-decoration: none;
+    color: red;
+}
+
 #video{
     background-color: #02040A;
     margin: 0px -20px 30px -20px;
@@ -34,7 +40,7 @@ header{
     height: 90%;
 }
 
-#tudo{
+main{
     margin: auto;
     width: 100%;
     max-width: 550px;
@@ -42,12 +48,19 @@ header{
     text-align: justify;
 }
 
-a{
-    text-decoration: none;
-    color: red;
+li{
+    padding: 13px;
 }
-a:hover{
-    color: rgba(255, 0, 0, 0.541);
+
+li>a{
+    text-decoration: none;
+    color: #140833;
+    background-color: red;
+    border-radius: 5px;
+    padding: 5px;
+}
+li>a:hover{
+    color: #ffffff;
 }
 
 .text{
