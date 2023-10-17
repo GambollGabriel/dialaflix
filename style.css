@@ -18,6 +18,10 @@ header{
     line-height: 80px;
 }
 
+article > normal{
+    display: block;
+}
+
 h1>a{
     background-color: #14083300;
     text-decoration: none;
@@ -78,4 +82,39 @@ img{
     margin: 10px 10px 10px 10px;
     padding: 20px;
     border-radius: 10px;
+}
+
+/*parabéns*/
+
+section{
+    max-width: 600px;
+    min-width: 320px;
+    margin: auto;
+    text-align: justify;
+    margin-top: 50px; 
+}
+
+article{
+    display: flex;
+    align-items: center;
+}
+
+img{
+    width: 200px;
+}
+
+p{
+    padding: 10px;
+}
+footer{
+    text-align: center;
+    margin: auto;
+    background-color: #02040A;
+    width: 900px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+a{
+    color: #ffffff;
+    margin: 10px;
 }
