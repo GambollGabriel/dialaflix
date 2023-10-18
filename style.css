@@ -109,9 +109,10 @@ p{
 footer{
     text-align: center;
     margin: auto;
-    background-color: #02040A;
-    max-width: 900px;
+    margin-top: 10px;
+    max-width: 800px;
     min-width: 320px;
+    background-color: #02040A;
     border-radius: 10px 10px 0px 0px;
 }
 
